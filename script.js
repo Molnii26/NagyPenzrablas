@@ -81,17 +81,20 @@ function kep(selectCity, demoSpan, imageDiv) {
 
     // a kép létrehozása, utána az elérési út beállítása, majd az alt és a title megadása
 
-    const img = document.createElement('img');
+    const img = document.createElement('img');//itt van változtatva
 
     img.src = `./img/${selectedValue.toLowerCase()}.jpg`;
     img.alt = selectedValue;
     img.title = selectedValue;
 
+
+    // végül cseréljük ki az imageDiv tartalmát az új képre
+    
     imageDiv.replaceChildren(img);
 
     console.log(img);
 
-    // végül cseréljük ki az imageDiv tartalmát az új képre
+    
 
     
 };
